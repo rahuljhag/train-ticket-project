@@ -50,6 +50,9 @@
 <body>
 
     <div class="container">
+        <div style="text-align: right; margin-bottom: 20px;">
+            <a href="login.html" style="color: #d32f2f; text-decoration: none; font-weight: bold;">Login / Register</a>
+        </div>
         <h1>🚆 RailShare</h1>
         <p>Smart Ticket Matching System</p>
         
@@ -57,7 +60,7 @@
         <input type="text" placeholder="To (Destination)">
         <input type="date">
         
-        <button onclick="alert('Searching for matches...')">Search Tickets</button>
+        <button type="button" onclick="location.href='results.html'" style="width: 100%; padding: 12px; background: #d32f2f; color: white; border: none; border-radius: 6px; font-size: 16px; cursor: pointer;">Search Tickets</button>
     </div>
 
 </body>

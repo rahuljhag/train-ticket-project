@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RailShare - Search Results</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #f4f7f6; margin: 0; padding: 20px; }
+        .container { max-width: 800px; margin: auto; }
+        h2 { color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 10px; }
+        
+        .ticket-card {
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-left: 5px solid #d32f2f;
+        }
+        .train-details h3 { margin: 0; color: #333; }
+        .train-details p { margin: 5px 0; color: #666; font-size: 14px; }
+        .status { font-weight: bold; font-size: 14px; padding: 4px 8px; border-radius: 4px; }
+        .status-match { background: #fff3e0; color: #ef6c00; }
+        .status-avail { background: #e8f5e9; color: #2e7d32; }
+        
+        .price-section { text-align: right; }
+        .price { font-size: 22px; font-weight: bold; color: #d32f2f; display: block; }
+        .btn-match {
+            margin-top: 10px;
+            padding: 8px 20px;
+            background: #d32f2f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .btn-match:hover { background: #b71c1c; }
+        .back-link { display: inline-block; margin-top: 20px; color: #666; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="index.html" class="back-link">← Modify Search</a>
+    <h2>Available Matches for Your Journey</h2>
+
+    <div class="ticket-card">
+        <div class="train-details">
+            <h3>New Delhi - Mumbai Express (12952)</h3>
+            <p>16:30 | NDLS ➔ 08:15 | BCT</p>
+            <span class="status status-match">1 Person wants to Swap/Cancel</span>
+        </div>
+        <div class="price-section">
+            <span class="price">₹2,150</span>
+            <button class="btn-match" onclick="location.href='login.html'">Match Now</button>
+        </div>
+    </div>
+
+    <div class="ticket-card">
+        <div class="train-details">
+            <h3>Duronto Special (12260)</h3>
+            <p>19:40 | NDLS ➔ 12:45 | MBI</p>
+            <span class="status status-avail">Confirmed Seat Available</span>
+        </div>
+        <div class="price-section">
+            <span class="price">₹1,890</span>
+            <button class="btn-match" onclick="location.href='login.html'">Match Now</button>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
